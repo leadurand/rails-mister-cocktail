@@ -1,7 +1,7 @@
 <div class="container text-center">
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
-      <h1>Modify your Cocktail</h1>
+      <h3>Modify your Cocktail</h3>
       <%= simple_form_for [@cocktail, @dose] do |f| %>
         <%= f.error_notification %>
 
@@ -12,5 +12,5 @@
       <% end %>
     </div>
   </div>
-    <%= link_to 'Back to list', cocktails_path, class: 'btn btn-info' %>
+    <%= link_to 'Back to list', cocktails_path %>
 </div>
